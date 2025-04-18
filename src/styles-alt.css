@@ -1,0 +1,135 @@
+
+.mainbody-to-do-list {
+    background-color: #F6E58D;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+}
+
+.to-do-list-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.to-do-list-container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #8B5B29;
+}
+
+.to-do-list-first-division {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 10px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.to-do-list-first-division > :first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.to-do-list-second-division {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid #443627;
+    border-bottom: 3px solid #443627;
+}
+
+.to-do-list-third-division {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid #443627;
+}
+
+.to-do-list-second-division:hover, .to-do-list-third-division:hover {
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+    cursor: pointer;
+}
+
+.to-do-list-button-div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.to-do-list-add-button {
+    font-size: 4em;
+    padding: 10px 25px;
+    background-color: #8B5B29;
+}
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+p {
+    margin: 0;
+}
+
+dialog {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    background-color: #F6E58D;
+    
+
+}
+
+.to-do-list-close-button {
+    align-self: flex-end;
+    background-color: #8B5B29;
+}
+
+.to-do-list-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: auto;
+    
+}
+
+.to-do-list-form > :nth-child(1),
+.to-do-list-form > :nth-child(2),
+.to-do-list-form > :nth-child(3){
+    display: flex;
+    flex-direction: column;
+}
+
+.to-do-list-form > :nth-last-child(2) {
+    display: flex;
+}
+
+.to-do-list-form > :nth-last-child(2) div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.to-do-list-submit-button {
+    width: fit-content;
+    align-self: center;
+    background-color: #8B5B29;
+    
+}
+
+.no-items {
+    font-size: 2em;
+}
